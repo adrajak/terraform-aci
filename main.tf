@@ -14,5 +14,5 @@ provider "aci" {
 }
 
 # Declare variables to hold credentials
-variable "admin" {}
-variable "!v3G@!4@Y" {}
+variable "username" {}
+variable "password" {}
