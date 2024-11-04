@@ -23,7 +23,7 @@ variable "password" {
   sensitive   = true
 }
 
-#resource "aci_tenant" "example" {
+# resource "aci_tenant" "example" {
   #name        = "demo_tenant"
  # description = "from terraform"
  # annotation  = "tag"
@@ -31,5 +31,5 @@ variable "password" {
 #}
 
 data "aci_tenant" "example" {
-  name  = "demo_tenant"
+  name  = "testing"
 }
