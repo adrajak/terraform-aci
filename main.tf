@@ -14,8 +14,14 @@ provider "aci" {
 }
 
 # Declare variables to hold credentials
-variable "username" {}
-variable "password" {}
+variable "username" {
+  description = "The username for Cisco ACI authentication."
+}
+
+variable "password" {
+  description = "The password for Cisco ACI authentication."
+  sensitive   = true
+}
 
 resource "aci_tenant" "example" {
   name        = "demo_tenant"
